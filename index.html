@@ -2,17 +2,43 @@
 <html lang=en>
   <head>
     <meta charset=utf-8>
-    <title>Nike, hjälp mig välja</title>
+    <title>colors</title>
     <link href="./main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <h1>Hjälp mig välja mellan..</h1>
+    <h1>help me choose color..</h1>
     <div class="inputSection">
       <div class="inputs">
-        <input placeholder=".."></input>
+        <input placeholder=""></input>
       </div>
-      <button class="addOption">Addera</button>
+      <button class="addOption">add</button>
     </div>
-    <button>Kör!</button>
+    <div class="resultSection"></div>
+    <button class= "submit">go!</button>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+      $(function() {
+        $('.resultSection').hide()
+
+        var add_option = function() {
+          $('.inputs').append('<input></input>')
+        }
+        $('.addOption').click(add_option)
+
+        var options = []
+        var submit = function() {
+          $('.inputSection').hide()
+          $('.resultSection').css('display', 'flex')
+          $('input').each(function() {
+            options.push($(this).val())
+          })
+          var winner = options[Math.floor(Math.random() * options.length)]
+          console.log(winner)
+          $('.resultSection').text(winner)
+        }
+        $('.submit').click(submit)
+    })
+    </script>
   </body>
 </html>

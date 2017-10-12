@@ -1,5 +1,5 @@
 body {
-  background-color: #f2f3f4;
+  background-color: #3498DB;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,7 +8,7 @@ body {
 }
 
 h1 {
-  color: #FF5733;
+  color: #5DADE2;
   font-weight: lighter;
   font-size: 40px;
   letter-spacing: 2px;
@@ -16,7 +16,7 @@ h1 {
 }
 
 .inputSection {
-  background-color: #f2f3f4;
+  background-color: #3498DB;
   color: #FF5733;
   margin: 50px 0px 80px 0px;
   width: 400px;
@@ -30,19 +30,38 @@ h1 {
 
 input {
   margin-top: 10px;
+  border: none;
 }
 
 .addOption {
-  background-color: #f2f3f4;
-  color: #FF5733;
+  background-color: ##3498DB;
+  color: #5DADE2;
   margin-top: 10px;
 }
 
 .någonting {
-  color: #FF5733;
+  color: #5DADE2;
 }
 
 button {
+  background-color: #2E86C1;
+  border: none;
+  color: #5DADE2;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.resultSection {
   color: #FF5733;
-  background-color: #f2f3f4;
+  height: 300px;
+  display: felx;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  border: none;
 }
