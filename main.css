@@ -10,8 +10,16 @@ body {
 h1 {
   color: #5DADE2;
   font-weight: lighter;
+  font-size: 50px;
+  letter-spacing: 4px;
+  margin-bottom: 0px;
+}
+
+h2 {
+  color: #5DADE2;
+  font-weight: lighter;
   font-size: 40px;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   margin-bottom: 0px;
 }
 
@@ -31,6 +39,7 @@ h1 {
 input {
   margin-top: 10px;
   border: none;
+  border-style: none;
 }
 
 .addOption {
@@ -44,8 +53,9 @@ input {
 }
 
 button {
-  background-color: #2E86C1;
+  background-color: #3498DB;
   border: none;
+  border-style: none;
   color: #5DADE2;
   padding: 15px 32px;
   text-align: center;
@@ -56,12 +66,19 @@ button {
   cursor: pointer;
 }
 
+
+button:hover {
+  background-color: #2E86C1;
+}
+
 .resultSection {
   color: #FF5733;
   height: 300px;
-  display: felx;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
   justify-content: center;
   align-items: center;
-  font-size: 35px;
+  font-size: 70px;
   border: none;
+
 }
